@@ -1,0 +1,9 @@
+<h1>My tasks</h1>
+<h2><%= @task.title %></h2>
+<p><%= @task.details %></p>
+
+<li><%= link_to "Go back to index.", tasks_path%></li>
+<li><%= link_to "Edit a task.", tasks_edit_path(@task.id)%></li>
+
+<li><%= link_to "Delete", tasks_path(@task.id)%></li>
+
